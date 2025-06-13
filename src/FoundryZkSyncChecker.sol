@@ -21,11 +21,16 @@ abstract contract FoundryZkSyncChecker is Test {
 
     // cast from-utf8 "forge Version: 0.3"
     bytes constant POST_THREE_FORGE_VERSION = hex"666f7267652056657273696f6e3a20302e33";
-    // cast from-utf8 "forge Version: 1.0"
-    bytes constant STABLE_ONE_VERSION = hex"666f7267652056657273696f6e3a20312e30";
+    // // cast from-utf8 "forge Version: 1.0"
+    // bytes constant STABLE_ONE_VERSION = hex"666f7267652056657273696f6e3a20312e30";
+    // // cast from-utf8 "forge Version: 1.1"
+    // bytes constant STABLE_ONE_ONE_VERSION = hex"666f7267652056657273696f6e3a20312e31";
+
+    // cast from-utf8 "forge Version: 1."
+    bytes constant STABLE_ONE_VERSION = hex"666f7267652056657273696f6e3a20312e";
 
     uint256 constant PRIOR_TO_THREE_PREFIX_LENGTH = 10;
-    uint256 constant POST_THREE_PREFIX_LENGTH = 18;
+    uint256 constant POST_THREE_PREFIX_LENGTH = 17;
 
     error FoundryZkSyncChecker__UnknownFoundryVersion();
 
